@@ -1,0 +1,12 @@
+gcc word2vec.c -o word2vec -lm -pthread -O3 -march=native -Wall -funroll-loops -Wno-unused-result
+gcc word2phrase.c -o word2phrase -lm -pthread -O3 -march=native -Wall -funroll-loops -Wno-unused-result
+gcc distance.c -o distance -lm -pthread -O3 -march=native -Wall -funroll-loops -Wno-unused-result
+distance.c: In function 'main':
+distance.c:31:8: warning: unused variable 'ch' [-Wunused-variable]
+gcc word-analogy.c -o word-analogy -lm -pthread -O3 -march=native -Wall -funroll-loops -Wno-unused-result
+word-analogy.c: In function 'main':
+word-analogy.c:31:8: warning: unused variable 'ch' [-Wunused-variable]
+gcc compute-accuracy.c -o compute-accuracy -lm -pthread -O3 -march=native -Wall -funroll-loops -Wno-unused-result
+compute-accuracy.c: In function 'main':
+compute-accuracy.c:29:109: warning: unused variable 'ch' [-Wunused-variable]
+chmod +x *.sh
